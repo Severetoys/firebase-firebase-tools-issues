@@ -1,0 +1,200 @@
+[debug] [2024-12-19T20:34:33.005Z] ----------------------------------------------------------------------
+[debug] [2024-12-19T20:34:33.023Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2024-12-19T20:34:33.024Z] CLI Version:   13.29.1
+[debug] [2024-12-19T20:34:33.024Z] Platform:      darwin
+[debug] [2024-12-19T20:34:33.024Z] Node Version:  v22.12.0
+[debug] [2024-12-19T20:34:33.024Z] Time:          Thu Dec 19 2024 17:34:33 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2024-12-19T20:34:33.025Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-19T20:34:33.396Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-19T20:34:33.397Z] > authorizing via signed-in user (italo16rj@gmail.com)
+[info] i  emulators: Starting emulators: dataconnect {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: dataconnect"}}
+[debug] [2024-12-19T20:34:33.999Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-12-19T20:34:33.999Z] [dataconnect.postgres] postgres server for dataconnect only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-12-19T20:34:33.999Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"dataconnect":[{"address":"127.0.0.1","family":"IPv4","port":9399},{"address":"::1","family":"IPv6","port":9399}],"dataconnect.postgres":[{"address":"127.0.0.1","family":"IPv4","port":5432}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-12-19T20:34:34.008Z] [hub] writing locator at /var/folders/7x/lfkszsc11pgd_5rsfzfj3cdc0000gn/T/hub-italosantos-c3ce0.json
+[info] i  dataconnect: downloading dataconnect-emulator-1.7.5... {"metadata":{"emulator":{"name":"dataconnect"},"message":"downloading dataconnect-emulator-1.7.5..."}}
+[debug] [2024-12-19T20:34:34.063Z] >>> [apiv2][query] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-macos-v1.7.5 
+[debug] [2024-12-19T20:34:34.679Z] <<< [apiv2][status] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-macos-v1.7.5 200
+[debug] [2024-12-19T20:34:34.679Z] <<< [apiv2][body] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-macos-v1.7.5 [stream]
+[debug] [2024-12-19T20:34:40.187Z] I1219 17:34:40.176181   17697 control.go:45] [engine.Service /emulator/public 0036] UpdateSchema(): done sources: schema/schema.gql [1384B] 
+I1219 17:34:40.184952   17697 control.go:73] [engine.Service /emulator/public 0036] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1219 17:34:40.176181   17697 control.go:45] [engine.Service /emulator/public 0036] UpdateSchema(): done sources: schema/schema.gql [1384B] \nI1219 17:34:40.184952   17697 control.go:73] [engine.Service /emulator/public 0036] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] \n"}}
+[debug] [2024-12-19T20:34:40.188Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-12-19T20:34:40.188Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-12-19T20:34:40.188Z] Starting Data Connect Emulator with command {"binary":"/Users/italosanta/.cache/firebase/emulators/dataconnect-emulator-1.7.5","args":["--logtostderr","-v=2","dev","--listen=127.0.0.1:9399,[::1]:9399","--config_dir=/Users/italosanta/Sites/localhost/public/dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"/Users/italosanta/.cache/firebase/emulators/dataconnect-emulator-1.7.5\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=127.0.0.1:9399,[::1]:9399\",\"--config_dir=/Users/italosanta/Sites/localhost/public/dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to \u001b[1mdataconnect-debug.log\u001b[22m"}}
+[info] i  dataconnect: Started up Postgres server, listening on {"address":"127.0.0.1","family":"IPv4","port":5432} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Started up Postgres server, listening on {\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":5432}"}}
+[debug] [2024-12-19T20:34:40.226Z] [Data Connect] Connecting to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}...
+[debug] [2024-12-19T20:34:40.228Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2024-12-19T20:34:40.228Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/fdcdb?sslmode=disable","database":"fdcdb","serviceId":"public","maxOpenConnections":1}
+[debug] [2024-12-19T20:34:40.230Z] I1219 17:34:40.229236   17698 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1219 17:34:40.229236   17698 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-12-19T20:34:40.232Z] *** [apiv2] error from fetch(http://127.0.0.1:9399/emulator/configure, {"headers":{},"method":"POST","body":"{\"connectionString\":\"postgres://127.0.0.1:5432/fdcdb?sslmode=disable\",\"database\":\"fdcdb\",\"serviceId\":\"public\",\"maxOpenConnections\":1}"}): FetchError: request to http://127.0.0.1:9399/emulator/configure failed, reason: connect ECONNREFUSED 127.0.0.1:9399
+[debug] [2024-12-19T20:34:40.233Z] [Data Connect] Retrying connectToPostgress call (1 of 3 attempts): FirebaseError: Data Connect emulator: undefined
+[debug] [2024-12-19T20:34:40.248Z] I1219 17:34:40.248286   17698 control.go:45] [engine.Service /emulator/public 7b6f] UpdateSchema(): done sources: schema/schema.gql [1384B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1219 17:34:40.248286   17698 control.go:45] [engine.Service /emulator/public 7b6f] UpdateSchema(): done sources: schema/schema.gql [1384B] \n"}}
+[debug] [2024-12-19T20:34:40.268Z] I1219 17:34:40.265890   17698 control.go:73] [engine.Service /emulator/public 7b6f] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1219 17:34:40.265890   17698 control.go:73] [engine.Service /emulator/public 7b6f] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] \n"}}
+[debug] [2024-12-19T20:34:40.308Z] I1219 17:34:40.303404   17698 collector.go:107] schema extensions wrote into "/Users/italosanta/Sites/localhost/public/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [65151B] 
+I1219 17:34:40.306750   17698 load.go:115] Finished reloading
+I1219 17:34:40.307029   17698 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+I1219 17:34:40.307228   17698 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1219 17:34:40.303404   17698 collector.go:107] schema extensions wrote into \"/Users/italosanta/Sites/localhost/public/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [65151B] \nI1219 17:34:40.306750   17698 load.go:115] Finished reloading\nI1219 17:34:40.307029   17698 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399\nI1219 17:34:40.307228   17698 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399\n"}}
+[debug] [2024-12-19T20:34:42.234Z] [Data Connect] Connecting to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}...
+[debug] [2024-12-19T20:34:42.235Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2024-12-19T20:34:42.235Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/fdcdb?sslmode=disable","database":"fdcdb","serviceId":"public","maxOpenConnections":1}
+[debug] [2024-12-19T20:34:42.257Z] Frontend message 
+[debug] [2024-12-19T20:34:42.260Z] Backend message AuthenticationResponse
+[debug] [2024-12-19T20:34:42.261Z] Backend message ParameterStatus
+[debug] [2024-12-19T20:34:42.262Z] Backend message ReadyForQuery
+[debug] [2024-12-19T20:34:42.262Z] Frontend message Query
+[debug] [2024-12-19T20:34:47.148Z] Backend message EmptyQuery
+[debug] [2024-12-19T20:34:47.149Z] Backend message ReadyForQuery
+[debug] [2024-12-19T20:34:47.161Z] Frontend message Query
+[debug] [2024-12-19T20:34:47.169Z] Backend message RowDescriptionMessage
+[debug] [2024-12-19T20:34:47.170Z] Backend message DataRow
+[debug] [2024-12-19T20:34:47.171Z] Backend message CommandComplete
+[debug] [2024-12-19T20:34:47.171Z] Backend message ReadyForQuery
+[debug] [2024-12-19T20:34:47.171Z] Frontend message Parse
+[debug] [2024-12-19T20:34:47.176Z] Backend message ParseComplete
+[debug] [2024-12-19T20:34:47.177Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.177Z] Frontend message Describe
+[debug] [2024-12-19T20:34:47.178Z] Backend message ParameterDescriptionMessage
+[debug] [2024-12-19T20:34:47.178Z] Backend message RowDescriptionMessage
+[debug] [2024-12-19T20:34:47.178Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.179Z] Frontend message Sync
+[debug] [2024-12-19T20:34:47.179Z] Backend message ReadyForQuery
+[debug] [2024-12-19T20:34:47.180Z] Frontend message Bind
+[debug] [2024-12-19T20:34:47.183Z] Backend message BindComplete
+[debug] [2024-12-19T20:34:47.183Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.183Z] Frontend message Execute
+[debug] [2024-12-19T20:34:47.185Z] Backend message DataRow
+[debug] [2024-12-19T20:34:47.186Z] Backend message CommandComplete
+[debug] [2024-12-19T20:34:47.186Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.186Z] Frontend message Sync
+[debug] [2024-12-19T20:34:47.187Z] Backend message ReadyForQuery
+[debug] [2024-12-19T20:34:47.187Z] Frontend message Parse
+[debug] [2024-12-19T20:34:47.189Z] Backend message ParseComplete
+[debug] [2024-12-19T20:34:47.190Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.191Z] Frontend message Describe
+[debug] [2024-12-19T20:34:47.191Z] Backend message ParameterDescriptionMessage
+[debug] [2024-12-19T20:34:47.191Z] Backend message RowDescriptionMessage
+[debug] [2024-12-19T20:34:47.192Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.192Z] Frontend message Sync
+[debug] [2024-12-19T20:34:47.192Z] Backend message ReadyForQuery
+[debug] [2024-12-19T20:34:47.193Z] Frontend message Bind
+[debug] [2024-12-19T20:34:47.195Z] Backend message BindComplete
+[debug] [2024-12-19T20:34:47.195Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.196Z] Frontend message Execute
+[debug] [2024-12-19T20:34:47.197Z] Backend message CommandComplete
+[debug] [2024-12-19T20:34:47.198Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.199Z] Frontend message Sync
+[debug] [2024-12-19T20:34:47.200Z] Backend message ReadyForQuery
+[debug] [2024-12-19T20:34:47.200Z] Frontend message Parse
+[debug] [2024-12-19T20:34:47.202Z] Backend message ParseComplete
+[debug] [2024-12-19T20:34:47.203Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.203Z] Frontend message Describe
+[debug] [2024-12-19T20:34:47.203Z] Backend message ParameterDescriptionMessage
+[debug] [2024-12-19T20:34:47.204Z] Backend message RowDescriptionMessage
+[debug] [2024-12-19T20:34:47.204Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.204Z] Frontend message Sync
+[debug] [2024-12-19T20:34:47.205Z] Backend message ReadyForQuery
+[debug] [2024-12-19T20:34:47.207Z] Frontend message Bind
+[debug] [2024-12-19T20:34:47.215Z] Backend message BindComplete
+[debug] [2024-12-19T20:34:47.215Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.216Z] Frontend message Execute
+[debug] [2024-12-19T20:34:47.217Z] Backend message CommandComplete
+[debug] [2024-12-19T20:34:47.217Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.217Z] Frontend message Sync
+[debug] [2024-12-19T20:34:47.218Z] Backend message ReadyForQuery
+[debug] [2024-12-19T20:34:47.218Z] Frontend message Query
+[debug] [2024-12-19T20:34:47.220Z] Backend message RowDescriptionMessage
+[debug] [2024-12-19T20:34:47.220Z] Backend message DataRow
+[debug] [2024-12-19T20:34:47.220Z] Backend message CommandComplete
+[debug] [2024-12-19T20:34:47.220Z] Backend message ReadyForQuery
+[debug] [2024-12-19T20:34:47.221Z] Frontend message Parse
+[debug] [2024-12-19T20:34:47.223Z] Backend message ParseComplete
+[debug] [2024-12-19T20:34:47.223Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.223Z] Frontend message Describe
+[debug] [2024-12-19T20:34:47.224Z] Backend message ParameterDescriptionMessage
+[debug] [2024-12-19T20:34:47.224Z] Backend message RowDescriptionMessage
+[debug] [2024-12-19T20:34:47.224Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.224Z] Frontend message Sync
+[debug] [2024-12-19T20:34:47.225Z] Backend message ReadyForQuery
+[debug] [2024-12-19T20:34:47.225Z] Frontend message Bind
+[debug] [2024-12-19T20:34:47.226Z] Backend message BindComplete
+[debug] [2024-12-19T20:34:47.227Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.227Z] Frontend message Execute
+[debug] [2024-12-19T20:34:47.228Z] Backend message DataRow
+[debug] [2024-12-19T20:34:47.228Z] Backend message CommandComplete
+[debug] [2024-12-19T20:34:47.228Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.228Z] Frontend message Sync
+[debug] [2024-12-19T20:34:47.231Z] Backend message ReadyForQuery
+[debug] [2024-12-19T20:34:47.231Z] Frontend message Parse
+[debug] [2024-12-19T20:34:47.232Z] Backend message ParseComplete
+[debug] [2024-12-19T20:34:47.233Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.233Z] Frontend message Describe
+[debug] [2024-12-19T20:34:47.233Z] Backend message ParameterDescriptionMessage
+[debug] [2024-12-19T20:34:47.234Z] Backend message RowDescriptionMessage
+[debug] [2024-12-19T20:34:47.234Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.234Z] Frontend message Sync
+[debug] [2024-12-19T20:34:47.234Z] Backend message ReadyForQuery
+[debug] [2024-12-19T20:34:47.235Z] Frontend message Bind
+[debug] [2024-12-19T20:34:47.236Z] Backend message BindComplete
+[debug] [2024-12-19T20:34:47.237Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.237Z] Frontend message Execute
+[debug] [2024-12-19T20:34:47.239Z] Backend message CommandComplete
+[debug] [2024-12-19T20:34:47.239Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.239Z] Frontend message Sync
+[debug] [2024-12-19T20:34:47.240Z] Backend message ReadyForQuery
+[debug] [2024-12-19T20:34:47.241Z] Frontend message Parse
+[debug] [2024-12-19T20:34:47.242Z] Backend message ParseComplete
+[debug] [2024-12-19T20:34:47.242Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.243Z] Frontend message Describe
+[debug] [2024-12-19T20:34:47.243Z] Backend message ParameterDescriptionMessage
+[debug] [2024-12-19T20:34:47.243Z] Backend message RowDescriptionMessage
+[debug] [2024-12-19T20:34:47.244Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.244Z] Frontend message Sync
+[debug] [2024-12-19T20:34:47.244Z] Backend message ReadyForQuery
+[debug] [2024-12-19T20:34:47.247Z] Frontend message Bind
+[debug] [2024-12-19T20:34:47.251Z] Backend message BindComplete
+[debug] [2024-12-19T20:34:47.252Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.252Z] Frontend message Execute
+[debug] [2024-12-19T20:34:47.253Z] Backend message CommandComplete
+[debug] [2024-12-19T20:34:47.253Z] Filtered out a ReadyForQuery.
+[debug] [2024-12-19T20:34:47.253Z] Frontend message Sync
+[debug] [2024-12-19T20:34:47.254Z] Backend message ReadyForQuery
+[debug] [2024-12-19T20:34:47.255Z] Frontend message Query
+[debug] [2024-12-19T20:34:47.256Z] Backend message RowDescriptionMessage
+[debug] [2024-12-19T20:34:47.256Z] Backend message DataRow
+[debug] [2024-12-19T20:34:47.256Z] Backend message CommandComplete
+[debug] [2024-12-19T20:34:47.256Z] Backend message ReadyForQuery
+[debug] [2024-12-19T20:34:47.257Z] I1219 17:34:47.257140   17698 control.go:45] [engine.Service /emulator/public 1bb3] UpdateSchema(): done sources: schema/schema.gql [1384B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1219 17:34:47.257140   17698 control.go:45] [engine.Service /emulator/public 1bb3] UpdateSchema(): done sources: schema/schema.gql [1384B] \n"}}
+[debug] [2024-12-19T20:34:47.257Z] I1219 17:34:47.257308   17698 control.go:73] [engine.Service /emulator/public 1bb3] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1219 17:34:47.257308   17698 control.go:73] [engine.Service /emulator/public 1bb3] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] \n"}}
+[debug] [2024-12-19T20:34:47.259Z] <<< [apiv2][status] POST http://127.0.0.1:9399/emulator/configure 200
+[debug] [2024-12-19T20:34:47.259Z] <<< [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {}
+[debug] [2024-12-19T20:34:47.260Z] [Data Connect] Successfully connected to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}
+[warn] ⚠  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[debug] [2024-12-19T20:34:47.273Z] >>> [apiv2][query] GET http://127.0.0.1:9399/emulator/info [none]
+[debug] [2024-12-19T20:34:47.276Z] <<< [apiv2][status] GET http://127.0.0.1:9399/emulator/info 200
+[debug] [2024-12-19T20:34:47.276Z] <<< [apiv2][body] GET http://127.0.0.1:9399/emulator/info {"version":"","services":[{"serviceId":"public","connectionString":"dbname='fdcdb' host='127.0.0.1' port='5432' sslmode='disable' dbname='fdcdb'"}]}
+[debug] [2024-12-19T20:34:47.285Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────────┬────────────────┐
+│ Emulator     │ Host:Port      │
+├──────────────┼────────────────┤
+│ Data Connect │ 127.0.0.1:9399 │
+└──────────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 

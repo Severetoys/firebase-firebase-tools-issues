@@ -1,0 +1,10 @@
+I1219 17:34:40.229236   17698 load.go:37] Reloading schema and connectors...
+I1219 17:34:40.248286   17698 control.go:45] [engine.Service /emulator/public 7b6f] UpdateSchema(): done sources: schema/schema.gql [1384B] 
+I1219 17:34:40.265890   17698 control.go:73] [engine.Service /emulator/public 7b6f] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+I1219 17:34:40.303404   17698 collector.go:107] schema extensions wrote into "/Users/italosanta/Sites/localhost/public/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [65151B] 
+I1219 17:34:40.306750   17698 load.go:115] Finished reloading
+I1219 17:34:40.307029   17698 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+I1219 17:34:40.307228   17698 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+I1219 17:34:47.257140   17698 control.go:45] [engine.Service /emulator/public 1bb3] UpdateSchema(): done sources: schema/schema.gql [1384B] 
+I1219 17:34:47.257308   17698 control.go:73] [engine.Service /emulator/public 1bb3] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
